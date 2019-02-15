@@ -18,7 +18,7 @@ func searchMatrix(matrix [][]int, target int) bool {
 }
 
 func binSearch(data []int, target int) bool {
-	low, high := 1, len(data)
+	low, high := 0, len(data)
 	for low < high {
 		mid := low + (high-low)/2
 		if data[mid] == target {
